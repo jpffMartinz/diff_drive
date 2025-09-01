@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<robotMeta>
+ <robotName>Robot</robotName>
+ <urdfFileName>Robot.urdf</urdfFileName>
+ <packageName>diff_drive</packageName>
+ <meshesDir>meshes </meshesDir>
+ <robotType>nonspecific</robotType>
+ <generateCodeForRosVersion>jazzy</generateCodeForRosVersion>
+ <rootLinkName>l_car_frame001</rootLinkName>
+ <xacroWrapperFileName>Robot_wrapper.urdf.xacro</xacroWrapperFileName>
+ <controllersConfigFileName>Robot_controllers.yaml</controllersConfigFileName>
+ <joints>
+  <joint>
+   <name>l_car_frame001__to__l_left_front_wheel001</name>
+   <jointSpecific>unset</jointSpecific>
+   <jointRotationDirection>unset</jointRotationDirection>
+   <jointRelTotalCenterOfMass_x>-0.24986509591897213</jointRelTotalCenterOfMass_x>
+   <jointRelTotalCenterOfMass_y>0.5873650979546768</jointRelTotalCenterOfMass_y>
+   <jointRelTotalCenterOfMass_z>-0.14190585393201366</jointRelTotalCenterOfMass_z>
+  </joint>
+  <joint>
+   <name>l_car_frame001__to__l_left_back_wheel001</name>
+   <jointSpecific>unset</jointSpecific>
+   <jointRotationDirection>unset</jointRotationDirection>
+   <jointRelTotalCenterOfMass_x>-0.24986509591897213</jointRelTotalCenterOfMass_x>
+   <jointRelTotalCenterOfMass_y>-0.5876349020453232</jointRelTotalCenterOfMass_y>
+   <jointRelTotalCenterOfMass_z>-0.14190585393201366</jointRelTotalCenterOfMass_z>
+  </joint>
+  <joint>
+   <name>l_car_frame001__to__l_right_front_wheel001</name>
+   <jointSpecific>unset</jointSpecific>
+   <jointRotationDirection>unset</jointRotationDirection>
+   <jointRelTotalCenterOfMass_x>0.2501349040810279</jointRelTotalCenterOfMass_x>
+   <jointRelTotalCenterOfMass_y>0.5873650979546768</jointRelTotalCenterOfMass_y>
+   <jointRelTotalCenterOfMass_z>-0.14190585393201366</jointRelTotalCenterOfMass_z>
+  </joint>
+  <joint>
+   <name>l_car_frame001__to__l_right_back_wheel001</name>
+   <jointSpecific>unset</jointSpecific>
+   <jointRotationDirection>unset</jointRotationDirection>
+   <jointRelTotalCenterOfMass_x>0.2501349040810279</jointRelTotalCenterOfMass_x>
+   <jointRelTotalCenterOfMass_y>-0.5876349020453232</jointRelTotalCenterOfMass_y>
+   <jointRelTotalCenterOfMass_z>-0.14190585393201366</jointRelTotalCenterOfMass_z>
+  </joint>
+ </joints>
+</robotMeta>

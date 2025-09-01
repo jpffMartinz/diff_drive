@@ -1,0 +1,44 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+    diff_drive_controller:
+      type: diff_drive_controller/DiffDriveController
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+diff_drive_controller:
+  ros__parameters:
+    left_wheel_names:
+      - l_car_frame001__to__l_left_back_wheel001
+      - l_car_frame001__to__l_left_front_wheel001
+    right_wheel_names:
+      - l_car_frame001__to__l_right_back_wheel001
+      - l_car_frame001__to__l_right_front_wheel001
+    
+    wheel_separation: 0.5
+    wheel_radius: 0.2
+    
+    base_frame_id: l_car_frame001
+    odom_frame_id: odom
+    
+    linear:
+      x:
+        max_velocity: 2.0
+        max_acceleration: 1.0
+        min_velocity: -2.0
+    angular:
+      z:
+        max_velocity: 1.0
+        max_acceleration: 1.0
+        min_velocity: -1.0
+    
+    publish_rate: 50.0
+    enable_odom_tf: true
+    cmd_vel_timeout: 0.5
+    
+    pose_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.001]
+    twist_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.001]
+
+joint_state_broadcaster:
+  ros__parameters:
+    use_urdf_to_filter: true
