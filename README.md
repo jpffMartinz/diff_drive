@@ -40,6 +40,9 @@ This will:
 - Start RViz2 with a pre-configured view
 - Display the robot with its joints and links
 
+## Viewing the Robot in Gazebo
+in construction
+
 ## Package Contents
 
 - **`launch/`** - Launch files for different functionalities
